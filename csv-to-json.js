@@ -1,14 +1,21 @@
 #!/usr/bin/env node
 
-/*
- * CSV to JSON converter
- * This application installs
- * This way we can invoke the program in multiple ways, e.g.:
+/* CSV to JSON converter
+ * This application converts a CSV file to JSON.
+ * It can be used as a standalone CLI tool, or as a node module:
+ * 
+ * Using it via CLI:
+ * 
  * $ node csv-to-json.js file_to_convert.csv
  * $ ./csv-to-json.js file_to_convert.csv (Requires execute permissions on POSIX, e.g. chmod +x csv-to-json.js)
+ * # If installed globally:
  * $ csv-to-json file_to_convert.csv
  * 
- * Or we can use it as a standalone module via the `convert' export.
+ * 
+ * Or we can use it as a module, e.g.
+ * 
+ * const csvtojson = require('csv-to-json')
+ * csvtojson.convert('employees.csv')
  */
 
 const csv = require('csvtojson')
