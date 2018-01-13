@@ -1,0 +1,26 @@
+{
+  "name": "csv-to-json",
+  "version": "1.0.0",
+  "description": "Convert a CSV file to JSON",
+  "main": "csv-to-json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "csv-to-json": "csv-to-json.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Metalgrid/csv-to-json.git"
+  },
+  "keywords": [],
+  "author": "Iskren Hadzhinedev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Metalgrid/csv-to-json/issues"
+  },
+  "homepage": "https://github.com/Metalgrid/csv-to-json#readme",
+  "dependencies": {
+    "csvtojson": "^1.1.9"
+  }
+}
