@@ -21,14 +21,15 @@
 const csv = require('csvtojson')
 const fs = require('fs')
 const path = require('path')
-const readline = require('readline')
 
 
 if (require.main === module) {
+    const readline = require('readline')
     const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout
-    });
+    })
+
     if (process.argv.length > 2) {
         convert_csv(process.argv[2])
     } else {
